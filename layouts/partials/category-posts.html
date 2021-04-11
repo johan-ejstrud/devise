@@ -6,7 +6,7 @@
                 {{ $recent = .Site.Params.recent_posts }}
             {{ end }}
             <div class="pb-3">
-                <h5><span class="badge category">Recent</span></h5>
+                <!-- <h5><span class="badge category">Recent</span></h5> -->
                 <ul class="list-unstyled">
                     {{ range first $recent (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
                         <li>
